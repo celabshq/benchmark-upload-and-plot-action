@@ -7,14 +7,16 @@ on:
 jobs:
   example-workflow:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # Checkout the current repo to get test data
       - uses: actions/checkout@v4
         with:
-          repository: cryspen/benchmark-data-extract-transform
+          repository: celabshq/benchmark-data-extract-transform
           path: first-action
           ref: dev
-      - uses: cryspen/benchmark-data-extract-transform@v1
+      - uses: celabshq/benchmark-data-extract-transform@v1
         with:
           tool: 'cargo'
           os: 'ubuntu-latest'
@@ -25,6 +27,8 @@ jobs:
       # Part 2: benchmark-upload-and-plot-action
       # prepare the local action in current branch for testing
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: "build"
         run: |
           npm install
