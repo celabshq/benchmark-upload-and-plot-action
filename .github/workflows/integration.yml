@@ -7,6 +7,8 @@ on:
 jobs:
   example-workflow:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # Checkout the current repo to get test data
       - uses: actions/checkout@v4
@@ -25,6 +27,8 @@ jobs:
       # Part 2: benchmark-upload-and-plot-action
       # prepare the local action in current branch for testing
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: "build"
         run: |
           npm install
