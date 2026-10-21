@@ -1,0 +1,58 @@
+{
+  "lastUpdate": 1792611443438,
+  "repoUrl": "https://github.com/celabshq/benchmark-upload-and-plot-action",
+  "entries": {
+    "Test second action": [
+      {
+        "commit": {
+          "author": {
+            "name": "celabshq",
+            "username": "celabshq"
+          },
+          "committer": {
+            "name": "celabshq",
+            "username": "celabshq"
+          },
+          "id": "4759cca2499d5a4765fe641ec55e10768b774c78",
+          "message": "Bump markdown-it from 14.2.0 to 14.3.3",
+          "timestamp": "2026-09-29T14:02:36Z",
+          "url": "https://github.com/celabshq/benchmark-upload-and-plot-action/pull/44/commits/4759cca2499d5a4765fe641ec55e10768b774c78"
+        },
+        "date": 1792611442400,
+        "bigger_is_better": false,
+        "benches": [
+          {
+            "value": 135,
+            "range": "± 24",
+            "unit": "ns/iter",
+            "os": "ubuntu-latest",
+            "name": "bench_fib_10"
+          },
+          {
+            "value": 18149,
+            "range": "± 755",
+            "unit": "ns/iter",
+            "os": "ubuntu-latest",
+            "name": "bench_fib_20"
+          }
+        ]
+      }
+    ]
+  },
+  "groupBy": {
+    "Test second action": [
+      "os",
+      "keySize"
+    ]
+  },
+  "schema": {
+    "Test second action": [
+      "os",
+      "keySize",
+      "name",
+      "platform",
+      "api",
+      "category"
+    ]
+  }
+}
