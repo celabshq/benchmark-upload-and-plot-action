@@ -1,0 +1,58 @@
+{
+  "lastUpdate": 1793300212139,
+  "repoUrl": "https://github.com/celabshq/benchmark-upload-and-plot-action",
+  "entries": {
+    "Test second action": [
+      {
+        "commit": {
+          "author": {
+            "name": "celabshq",
+            "username": "celabshq"
+          },
+          "committer": {
+            "name": "celabshq",
+            "username": "celabshq"
+          },
+          "id": "2709355b4420ec4cbba1f60d97418f9aa9e8d52d",
+          "message": "Bump undici from 6.27.0 to 6.29.1",
+          "timestamp": "2026-09-29T14:02:36Z",
+          "url": "https://github.com/celabshq/benchmark-upload-and-plot-action/pull/45/commits/2709355b4420ec4cbba1f60d97418f9aa9e8d52d"
+        },
+        "date": 1793300211438,
+        "bigger_is_better": false,
+        "benches": [
+          {
+            "value": 135,
+            "range": "± 24",
+            "unit": "ns/iter",
+            "os": "ubuntu-latest",
+            "name": "bench_fib_10"
+          },
+          {
+            "value": 18149,
+            "range": "± 755",
+            "unit": "ns/iter",
+            "os": "ubuntu-latest",
+            "name": "bench_fib_20"
+          }
+        ]
+      }
+    ]
+  },
+  "groupBy": {
+    "Test second action": [
+      "os",
+      "keySize"
+    ]
+  },
+  "schema": {
+    "Test second action": [
+      "os",
+      "keySize",
+      "name",
+      "platform",
+      "api",
+      "category"
+    ]
+  }
+}
